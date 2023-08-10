@@ -14,4 +14,5 @@ module "subnets" {
   tags = var.tags
   name = each.value["name"]
   env = var.env
+  azs = each.value["azs"]
 }
